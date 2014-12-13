@@ -31,6 +31,7 @@
                 },
                 cursor: 'default'
             };
+            dragOptions = $.extend(true, {}, dragOptions, dragElement.data('dragOptions'));
             dragElement.draggable(dragOptions).disableSelection();
         },
         update: function(element, valueAccessor, allBindingsAccessor, viewModel) {
